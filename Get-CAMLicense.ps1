@@ -60,7 +60,8 @@
 		
 		if (-not (Get-Module -Name SMLets)) { Import-Module -Name SMLets -ErrorAction Stop }
 		
-		Write-Verbose "[BEGIN] ParameterSet: $($PSCmdlet.ParameterSetName)"
+		Write-Debug -Message "ParameterSetName: $($PSCmdlet.ParameterSetName)"
+		Write-Debug -Message "Parameters: $($PSBoundParameters.Keys)"
 	}
 	PROCESS
 	{
@@ -70,31 +71,14 @@
 				Class = (Get-SCSMClass -name 'Cireson.AssetManagement.Licence')
 			}
 			
-			IF ($PSBoundParameters['DisplayName'])
-			{
-				Get-Scsmobject @Splatting -Filter "DisplayName -like $DisplayName"
-			}
-			ELSEIF ($PSBoundParameters['ID'])
-			{
-				Get-Scsmobject @Splatting -Filter "Id -eq $ID"
-			}
-			ELSEIF ($PSBoundParameters['Filter'])
-			{
-				get-scsmobject @Splatting -Filter $Filter
-			}
+			IF ($PSBoundParameters['DisplayName']){Get-Scsmobject @Splatting -Filter "DisplayName -like $DisplayName"}
+			ELSEIF ($PSBoundParameters['ID']){Get-Scsmobject @Splatting -Filter "Id -eq $ID"}
+			ELSEIF ($PSBoundParameters['Filter']){get-scsmobject @Splatting -Filter $Filter}
 			ELSEIF ($PSBoundParameters['DaysLeft'])
 			{
 				get-scsmobject @Splatting -Filter "ContractEndDate -lt $((Get-Date).AddDays($DaysLeft))" #-and ContractEndDate -ge $(Get-Date)"
 			}
-			ELSE
-			{
-				get-scsmobject @Splatting
-			}
-			<#IF ($PSBoundParameters['Status'])
-			{
-				Write-Verbose -Message "[PROCESS] Parameter: Status"
-				get-scsmobject @Splatting -Filter "ContractStatus -eq $Status"
-			}#>
+			ELSE{get-scsmobject @Splatting}
 		}
 		CATCH
 		{
