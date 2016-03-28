@@ -1,0 +1,14 @@
+﻿<Project>
+	<Version>1.0</Version>
+	<FileID>d23be0e8-7e24-44ae-9984-5787b5dd5e4c</FileID>
+	<ProjectType>1</ProjectType>
+	<Files>
+		<File ReferenceName="" Build="0">CiresonAssetManagementPS.psd1</File>
+		<File ReferenceName="" Build="0">CiresonAssetManagementPS.psm1</File>
+		<File ReferenceName="" Build="2">CiresonAssetManagementPS.psm1-Help.xml</File>
+	</Files>
+	<OpenFiles>
+		<File>CiresonAssetManagementPS.psd1</File>
+		<File>CiresonAssetManagementPS.psm1</File>
+	</OpenFiles>
+</Project>

@@ -1,0 +1,1050 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<helpItems xmlns="http://msh" schema="maml">
+	<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+		<command:details>
+			<command:name>Get-CAMClass</command:name>
+			<maml:description>
+				<maml:para>Function to retrieve Cireson Asset Management classes</maml:para>
+
+			</maml:description>
+			<maml:copyright>
+				<maml:para></maml:para>
+			</maml:copyright>
+			<command:verb>Get</command:verb>
+			<command:noun>CAMClass</command:noun>
+			<dev:version/>
+		</command:details>
+		<maml:description>
+				<maml:para>Function to retrieve Cireson Asset Management classes</maml:para>
+
+		</maml:description>
+		<command:syntax>
+			<command:syntaxItem>
+				<maml:name>Get-CAMClass</maml:name>
+			</command:syntaxItem>
+		</command:syntax>
+		<command:parameters>
+		</command:parameters>
+		<maml:alertSet>
+			<maml:title></maml:title>
+			<maml:alert>
+				<maml:para>Francois-Xavier Cat
+@Lazywinadm
+www.lazywinadmin.com</maml:para>
+			</maml:alert>
+		</maml:alertSet>
+		<command:examples>
+			<command:example>
+				<maml:title>--------------------------  EXAMPLE 0  --------------------------</maml:title>
+				<maml:introduction>
+					<maml:para></maml:para>
+				</maml:introduction>
+				<dev:code>PS C:\&gt; Get-CAMClass</dev:code>
+				<dev:remarks>
+					<maml:para></maml:para>
+
+				</dev:remarks>
+			</command:example>
+			<command:example>
+				<maml:title>--------------------------  EXAMPLE 1  --------------------------</maml:title>
+				<maml:introduction>
+					<maml:para></maml:para>
+				</maml:introduction>
+				<dev:code>PS C:\&gt; </dev:code>
+				<dev:remarks>
+					<maml:para></maml:para>
+
+				</dev:remarks>
+			</command:example>
+		</command:examples>
+	</command:command>
+	<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+		<command:details>
+			<command:name>Get-CAMHardwareAsset</command:name>
+			<maml:description>
+				<maml:para>Function to retrieve Hardware Asset from the Cireson Asset Management</maml:para>
+
+			</maml:description>
+			<maml:copyright>
+				<maml:para></maml:para>
+			</maml:copyright>
+			<command:verb>Get</command:verb>
+			<command:noun>CAMHardwareAsset</command:noun>
+			<dev:version/>
+		</command:details>
+		<maml:description>
+				<maml:para>Function to retrieve Hardware Asset from the Cireson Asset Management</maml:para>
+
+		</maml:description>
+		<command:syntax>
+			<command:syntaxItem>
+				<maml:name>Get-CAMHardwareAsset</maml:name>
+				<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="Named">
+					<maml:name>DisplayName</maml:name>
+					<maml:description>
+						<maml:para></maml:para>
+					</maml:description>
+					<command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+				</command:parameter>
+				<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="Named">
+					<maml:name>Id</maml:name>
+					<maml:description>
+						<maml:para></maml:para>
+					</maml:description>
+					<command:parameterValue required="true" variableLength="false"></command:parameterValue>
+				</command:parameter>
+			</command:syntaxItem>
+		</command:syntax>
+		<command:parameters>
+			<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="Named">
+				<maml:name>DisplayName</maml:name>
+				<maml:description>
+					<maml:para></maml:para>
+				</maml:description>
+					<command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+				<dev:type>
+					<maml:name>System.String</maml:name>
+					<maml:uri/>
+				</dev:type>
+				<dev:defaultValue></dev:defaultValue>
+			</command:parameter>
+			<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="Named">
+				<maml:name>Id</maml:name>
+				<maml:description>
+					<maml:para></maml:para>
+				</maml:description>
+					<command:parameterValue required="true" variableLength="false"></command:parameterValue>
+				<dev:type>
+					<maml:name></maml:name>
+					<maml:uri/>
+				</dev:type>
+				<dev:defaultValue></dev:defaultValue>
+			</command:parameter>
+		</command:parameters>
+		<maml:alertSet>
+			<maml:title></maml:title>
+			<maml:alert>
+				<maml:para>Francois-Xavier Cat
+@Lazywinadm
+www.lazywinadmin.com</maml:para>
+			</maml:alert>
+		</maml:alertSet>
+		<command:examples>
+			<command:example>
+				<maml:title>--------------------------  EXAMPLE 0  --------------------------</maml:title>
+				<maml:introduction>
+					<maml:para></maml:para>
+				</maml:introduction>
+				<dev:code>PS C:\&gt; Get-CamHardwareAsset</dev:code>
+				<dev:remarks>
+					<maml:para></maml:para>
+
+				</dev:remarks>
+			</command:example>
+			<command:example>
+				<maml:title>--------------------------  EXAMPLE 1  --------------------------</maml:title>
+				<maml:introduction>
+					<maml:para></maml:para>
+				</maml:introduction>
+				<dev:code>PS C:\&gt; Get-CamHardwareAsset -DisplayName &quot;*Pro&quot;</dev:code>
+				<dev:remarks>
+					<maml:para></maml:para>
+
+				</dev:remarks>
+			</command:example>
+			<command:example>
+				<maml:title>--------------------------  EXAMPLE 2  --------------------------</maml:title>
+				<maml:introduction>
+					<maml:para></maml:para>
+				</maml:introduction>
+				<dev:code>PS C:\&gt; Get-CamHardwareAsset -id &#39;3cbgg558-a09c-b717-2401-05aef430b01f&#39;</dev:code>
+				<dev:remarks>
+					<maml:para></maml:para>
+
+				</dev:remarks>
+			</command:example>
+		</command:examples>
+	</command:command>
+	<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+		<command:details>
+			<command:name>Get-CAMLicense</command:name>
+			<maml:description>
+				<maml:para>Function to retrieve License from the Cireson Asset Management</maml:para>
+
+			</maml:description>
+			<maml:copyright>
+				<maml:para></maml:para>
+			</maml:copyright>
+			<command:verb>Get</command:verb>
+			<command:noun>CAMLicense</command:noun>
+			<dev:version/>
+		</command:details>
+		<maml:description>
+				<maml:para>Function to retrieve License from the Cireson Asset Management</maml:para>
+
+		</maml:description>
+		<command:syntax>
+			<command:syntaxItem>
+				<maml:name>Get-CAMLicense</maml:name>
+				<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="Named">
+					<maml:name>DisplayName</maml:name>
+					<maml:description>
+						<maml:para>Specifies the DisplayName</maml:para>
+					</maml:description>
+					<command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+				</command:parameter>
+				<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="Named">
+					<maml:name>Id</maml:name>
+					<maml:description>
+						<maml:para>Specifies the ID of the License. Typically the GUID.</maml:para>
+					</maml:description>
+					<command:parameterValue required="true" variableLength="false"></command:parameterValue>
+				</command:parameter>
+				<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="Named">
+					<maml:name>Filter</maml:name>
+					<maml:description>
+						<maml:para>Specifies the filter you want to apply</maml:para>
+					</maml:description>
+					<command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+				</command:parameter>
+			</command:syntaxItem>
+		</command:syntax>
+		<command:parameters>
+			<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="Named">
+				<maml:name>DisplayName</maml:name>
+				<maml:description>
+					<maml:para>Specifies the DisplayName</maml:para>
+				</maml:description>
+					<command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+				<dev:type>
+					<maml:name>System.String</maml:name>
+					<maml:uri/>
+				</dev:type>
+				<dev:defaultValue></dev:defaultValue>
+			</command:parameter>
+			<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="Named">
+				<maml:name>Id</maml:name>
+				<maml:description>
+					<maml:para>Specifies the ID of the License. Typically the GUID.</maml:para>
+				</maml:description>
+					<command:parameterValue required="true" variableLength="false"></command:parameterValue>
+				<dev:type>
+					<maml:name></maml:name>
+					<maml:uri/>
+				</dev:type>
+				<dev:defaultValue></dev:defaultValue>
+			</command:parameter>
+			<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="Named">
+				<maml:name>Filter</maml:name>
+				<maml:description>
+					<maml:para>Specifies the filter you want to apply</maml:para>
+				</maml:description>
+					<command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+				<dev:type>
+					<maml:name>System.String</maml:name>
+					<maml:uri/>
+				</dev:type>
+				<dev:defaultValue></dev:defaultValue>
+			</command:parameter>
+		</command:parameters>
+		<maml:alertSet>
+			<maml:title></maml:title>
+			<maml:alert>
+				<maml:para>Francois-Xavier Cat
+www.lazywinadmin.com
+@lazywinadm</maml:para>
+			</maml:alert>
+		</maml:alertSet>
+		<command:examples>
+			<command:example>
+				<maml:title>--------------------------  EXAMPLE 0  --------------------------</maml:title>
+				<maml:introduction>
+					<maml:para></maml:para>
+				</maml:introduction>
+				<dev:code>PS C:\&gt; Get-CAMLicense</dev:code>
+				<dev:remarks>
+					<maml:para>Retrieve all the Licenses</maml:para>
+
+				</dev:remarks>
+			</command:example>
+			<command:example>
+				<maml:title>--------------------------  EXAMPLE 1  --------------------------</maml:title>
+				<maml:introduction>
+					<maml:para></maml:para>
+				</maml:introduction>
+				<dev:code>PS C:\&gt; Get-CAMLicense -DisplayName &quot;Antidote*&quot;</dev:code>
+				<dev:remarks>
+					<maml:para>Retrieve the Licenses with the displayname Antidote</maml:para>
+
+				</dev:remarks>
+			</command:example>
+			<command:example>
+				<maml:title>--------------------------  EXAMPLE 2  --------------------------</maml:title>
+				<maml:introduction>
+					<maml:para></maml:para>
+				</maml:introduction>
+				<dev:code>PS C:\&gt; Get-CAMLicense -id &#39;3cbgg558-a09c-b717-2401-05aef430b01f&#39;</dev:code>
+				<dev:remarks>
+					<maml:para>Retrieve the specific License with the ID &#39;3cbgg558-a09c-b717-2401-05aef430b01f&#39;</maml:para>
+
+				</dev:remarks>
+			</command:example>
+			<command:example>
+				<maml:title>--------------------------  EXAMPLE 3  --------------------------</maml:title>
+				<maml:introduction>
+					<maml:para></maml:para>
+				</maml:introduction>
+				<dev:code>PS C:\&gt; Get-CAMLicense -filter &quot;SeatsRemaining -gt 1&quot;</dev:code>
+				<dev:remarks>
+					<maml:para>Retrieve Licenses with more thant 1 seat available</maml:para>
+
+				</dev:remarks>
+			</command:example>
+		</command:examples>
+	</command:command>
+	<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+		<command:details>
+			<command:name>Get-CAMOrganization</command:name>
+			<maml:description>
+				<maml:para>Function to retrieve Organization from the Cireson Asset Management</maml:para>
+
+			</maml:description>
+			<maml:copyright>
+				<maml:para></maml:para>
+			</maml:copyright>
+			<command:verb>Get</command:verb>
+			<command:noun>CAMOrganization</command:noun>
+			<dev:version/>
+		</command:details>
+		<maml:description>
+				<maml:para>Function to retrieve Organization from the Cireson Asset Management</maml:para>
+
+		</maml:description>
+		<command:syntax>
+			<command:syntaxItem>
+				<maml:name>Get-CAMOrganization</maml:name>
+				<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="Named">
+					<maml:name>DisplayName</maml:name>
+					<maml:description>
+						<maml:para></maml:para>
+					</maml:description>
+					<command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+				</command:parameter>
+				<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="Named">
+					<maml:name>Id</maml:name>
+					<maml:description>
+						<maml:para></maml:para>
+					</maml:description>
+					<command:parameterValue required="true" variableLength="false"></command:parameterValue>
+				</command:parameter>
+				<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="Named">
+					<maml:name>Filter</maml:name>
+					<maml:description>
+						<maml:para></maml:para>
+					</maml:description>
+					<command:parameterValue required="true" variableLength="false"></command:parameterValue>
+				</command:parameter>
+			</command:syntaxItem>
+		</command:syntax>
+		<command:parameters>
+			<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="Named">
+				<maml:name>DisplayName</maml:name>
+				<maml:description>
+					<maml:para></maml:para>
+				</maml:description>
+					<command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+				<dev:type>
+					<maml:name>System.String</maml:name>
+					<maml:uri/>
+				</dev:type>
+				<dev:defaultValue></dev:defaultValue>
+			</command:parameter>
+			<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="Named">
+				<maml:name>Id</maml:name>
+				<maml:description>
+					<maml:para></maml:para>
+				</maml:description>
+					<command:parameterValue required="true" variableLength="false"></command:parameterValue>
+				<dev:type>
+					<maml:name></maml:name>
+					<maml:uri/>
+				</dev:type>
+				<dev:defaultValue></dev:defaultValue>
+			</command:parameter>
+			<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="Named">
+				<maml:name>Filter</maml:name>
+				<maml:description>
+					<maml:para></maml:para>
+				</maml:description>
+					<command:parameterValue required="true" variableLength="false"></command:parameterValue>
+				<dev:type>
+					<maml:name></maml:name>
+					<maml:uri/>
+				</dev:type>
+				<dev:defaultValue></dev:defaultValue>
+			</command:parameter>
+		</command:parameters>
+		<maml:alertSet>
+			<maml:title></maml:title>
+			<maml:alert>
+				<maml:para>Francois-Xavier Cat
+@Lazywinadm
+www.lazywinadmin.com</maml:para>
+			</maml:alert>
+		</maml:alertSet>
+		<command:examples>
+			<command:example>
+				<maml:title>--------------------------  EXAMPLE 0  --------------------------</maml:title>
+				<maml:introduction>
+					<maml:para></maml:para>
+				</maml:introduction>
+				<dev:code>PS C:\&gt; Get-CamOrganization</dev:code>
+				<dev:remarks>
+					<maml:para></maml:para>
+
+				</dev:remarks>
+			</command:example>
+			<command:example>
+				<maml:title>--------------------------  EXAMPLE 1  --------------------------</maml:title>
+				<maml:introduction>
+					<maml:para></maml:para>
+				</maml:introduction>
+				<dev:code>PS C:\&gt; Get-CamOrganization -Displayname &#39;IT&#39;</dev:code>
+				<dev:remarks>
+					<maml:para></maml:para>
+
+				</dev:remarks>
+			</command:example>
+			<command:example>
+				<maml:title>--------------------------  EXAMPLE 2  --------------------------</maml:title>
+				<maml:introduction>
+					<maml:para></maml:para>
+				</maml:introduction>
+				<dev:code>PS C:\&gt; Get-CamOrganization -ID &#39;80e80889-86d1-4cee-b1e9-fcd265fa54a2&#39;</dev:code>
+				<dev:remarks>
+					<maml:para></maml:para>
+
+				</dev:remarks>
+			</command:example>
+			<command:example>
+				<maml:title>--------------------------  EXAMPLE 3  --------------------------</maml:title>
+				<maml:introduction>
+					<maml:para></maml:para>
+				</maml:introduction>
+				<dev:code>PS C:\&gt; Get-CamOrganization -Filter &quot;ID -eq 80e80889-86d1-4cee-b1e9-fcd265fa54a2&quot;</dev:code>
+				<dev:remarks>
+					<maml:para></maml:para>
+
+				</dev:remarks>
+			</command:example>
+		</command:examples>
+	</command:command>
+	<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+		<command:details>
+			<command:name>Get-CAMRelatedCustodian</command:name>
+			<maml:description>
+				<maml:para>Function to retrieve the Related Custodian of an object</maml:para>
+
+			</maml:description>
+			<maml:copyright>
+				<maml:para></maml:para>
+			</maml:copyright>
+			<command:verb>Get</command:verb>
+			<command:noun>CAMRelatedCustodian</command:noun>
+			<dev:version/>
+		</command:details>
+		<maml:description>
+				<maml:para>Function to retrieve the Related Custodian of an object</maml:para>
+
+		</maml:description>
+		<command:syntax>
+			<command:syntaxItem>
+				<maml:name>Get-CAMRelatedCustodian</maml:name>
+				<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="true (ByValue)" position="Named">
+					<maml:name>WorkItemObject</maml:name>
+					<maml:description>
+						<maml:para>Specifies the Object to process</maml:para>
+					</maml:description>
+					<command:parameterValue required="true" variableLength="false"></command:parameterValue>
+				</command:parameter>
+			</command:syntaxItem>
+		</command:syntax>
+		<command:parameters>
+			<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="true (ByValue)" position="Named">
+				<maml:name>WorkItemObject</maml:name>
+				<maml:description>
+					<maml:para>Specifies the Object to process</maml:para>
+				</maml:description>
+					<command:parameterValue required="true" variableLength="false"></command:parameterValue>
+				<dev:type>
+					<maml:name></maml:name>
+					<maml:uri/>
+				</dev:type>
+				<dev:defaultValue></dev:defaultValue>
+			</command:parameter>
+		</command:parameters>
+		<maml:alertSet>
+			<maml:title></maml:title>
+			<maml:alert>
+				<maml:para>Francois-Xavier Cat
+www.lazywinadmin.com
+@lazywinadm</maml:para>
+			</maml:alert>
+		</maml:alertSet>
+		<command:examples>
+			<command:example>
+				<maml:title>--------------------------  EXAMPLE 0  --------------------------</maml:title>
+				<maml:introduction>
+					<maml:para></maml:para>
+				</maml:introduction>
+				<dev:code>PS C:\&gt; Get-CAMRelatedCustodian -WorkItemObject $SupportContract</dev:code>
+				<dev:remarks>
+					<maml:para></maml:para>
+
+				</dev:remarks>
+			</command:example>
+		</command:examples>
+	</command:command>
+	<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+		<command:details>
+			<command:name>Get-CAMRelatedVendor</command:name>
+			<maml:description>
+				<maml:para>Function to retrieve the Vendor associate with a specific CAM class</maml:para>
+
+			</maml:description>
+			<maml:copyright>
+				<maml:para></maml:para>
+			</maml:copyright>
+			<command:verb>Get</command:verb>
+			<command:noun>CAMRelatedVendor</command:noun>
+			<dev:version/>
+		</command:details>
+		<maml:description>
+				<maml:para>Function to retrieve the Vendor associate with a specific CAM class.
+I&#39;m using this for Support Contracts.</maml:para>
+
+		</maml:description>
+		<command:syntax>
+			<command:syntaxItem>
+				<maml:name>Get-CAMRelatedVendor</maml:name>
+				<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="true (ByValue)" position="Named">
+					<maml:name>WorkItemObject</maml:name>
+					<maml:description>
+						<maml:para>Specify the Object</maml:para>
+					</maml:description>
+					<command:parameterValue required="true" variableLength="false"></command:parameterValue>
+				</command:parameter>
+			</command:syntaxItem>
+		</command:syntax>
+		<command:parameters>
+			<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="true (ByValue)" position="Named">
+				<maml:name>WorkItemObject</maml:name>
+				<maml:description>
+					<maml:para>Specify the Object</maml:para>
+				</maml:description>
+					<command:parameterValue required="true" variableLength="false"></command:parameterValue>
+				<dev:type>
+					<maml:name></maml:name>
+					<maml:uri/>
+				</dev:type>
+				<dev:defaultValue></dev:defaultValue>
+			</command:parameter>
+		</command:parameters>
+		<maml:alertSet>
+			<maml:title></maml:title>
+			<maml:alert>
+				<maml:para>Francois-Xavier Cat
+www.lazywinadmin.com
+@lazywinadm</maml:para>
+			</maml:alert>
+		</maml:alertSet>
+		<command:examples>
+			<command:example>
+				<maml:title>--------------------------  EXAMPLE 0  --------------------------</maml:title>
+				<maml:introduction>
+					<maml:para></maml:para>
+				</maml:introduction>
+				<dev:code>PS C:\&gt; Get-CAMRelatedVendor -WorkItemObject $SupportContract</dev:code>
+				<dev:remarks>
+					<maml:para></maml:para>
+
+				</dev:remarks>
+			</command:example>
+		</command:examples>
+	</command:command>
+	<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+		<command:details>
+			<command:name>Get-CAMSoftwareAsset</command:name>
+			<maml:description>
+				<maml:para>Function to retrieve Software Asset from the Cireson Asset Management</maml:para>
+
+			</maml:description>
+			<maml:copyright>
+				<maml:para></maml:para>
+			</maml:copyright>
+			<command:verb>Get</command:verb>
+			<command:noun>CAMSoftwareAsset</command:noun>
+			<dev:version/>
+		</command:details>
+		<maml:description>
+				<maml:para>Function to retrieve Software Asset from the Cireson Asset Management</maml:para>
+
+		</maml:description>
+		<command:syntax>
+			<command:syntaxItem>
+				<maml:name>Get-CAMSoftwareAsset</maml:name>
+				<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="Named">
+					<maml:name>DisplayName</maml:name>
+					<maml:description>
+						<maml:para></maml:para>
+					</maml:description>
+					<command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+				</command:parameter>
+				<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="Named">
+					<maml:name>Id</maml:name>
+					<maml:description>
+						<maml:para></maml:para>
+					</maml:description>
+					<command:parameterValue required="true" variableLength="false"></command:parameterValue>
+				</command:parameter>
+				<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="Named">
+					<maml:name>Filter</maml:name>
+					<maml:description>
+						<maml:para></maml:para>
+					</maml:description>
+					<command:parameterValue required="true" variableLength="false"></command:parameterValue>
+				</command:parameter>
+			</command:syntaxItem>
+		</command:syntax>
+		<command:parameters>
+			<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="Named">
+				<maml:name>DisplayName</maml:name>
+				<maml:description>
+					<maml:para></maml:para>
+				</maml:description>
+					<command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+				<dev:type>
+					<maml:name>System.String</maml:name>
+					<maml:uri/>
+				</dev:type>
+				<dev:defaultValue></dev:defaultValue>
+			</command:parameter>
+			<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="Named">
+				<maml:name>Id</maml:name>
+				<maml:description>
+					<maml:para></maml:para>
+				</maml:description>
+					<command:parameterValue required="true" variableLength="false"></command:parameterValue>
+				<dev:type>
+					<maml:name></maml:name>
+					<maml:uri/>
+				</dev:type>
+				<dev:defaultValue></dev:defaultValue>
+			</command:parameter>
+			<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="Named">
+				<maml:name>Filter</maml:name>
+				<maml:description>
+					<maml:para></maml:para>
+				</maml:description>
+					<command:parameterValue required="true" variableLength="false"></command:parameterValue>
+				<dev:type>
+					<maml:name></maml:name>
+					<maml:uri/>
+				</dev:type>
+				<dev:defaultValue></dev:defaultValue>
+			</command:parameter>
+		</command:parameters>
+		<maml:alertSet>
+			<maml:title></maml:title>
+			<maml:alert>
+				<maml:para>Francois-Xavier Cat
+@Lazywinadm
+www.lazywinadmin.com</maml:para>
+			</maml:alert>
+		</maml:alertSet>
+		<command:examples>
+			<command:example>
+				<maml:title>--------------------------  EXAMPLE 0  --------------------------</maml:title>
+				<maml:introduction>
+					<maml:para></maml:para>
+				</maml:introduction>
+				<dev:code>PS C:\&gt; Get-CamSoftwareAsset</dev:code>
+				<dev:remarks>
+					<maml:para></maml:para>
+
+				</dev:remarks>
+			</command:example>
+			<command:example>
+				<maml:title>--------------------------  EXAMPLE 1  --------------------------</maml:title>
+				<maml:introduction>
+					<maml:para></maml:para>
+				</maml:introduction>
+				<dev:code>PS C:\&gt; Get-CamSoftwareAsset -DisplayName &quot;*Pro&quot;</dev:code>
+				<dev:remarks>
+					<maml:para></maml:para>
+
+				</dev:remarks>
+			</command:example>
+			<command:example>
+				<maml:title>--------------------------  EXAMPLE 2  --------------------------</maml:title>
+				<maml:introduction>
+					<maml:para></maml:para>
+				</maml:introduction>
+				<dev:code>PS C:\&gt; Get-CamSoftwareAsset -id &#39;3cbgg558-a09c-b717-2401-05aef430b01f&#39;</dev:code>
+				<dev:remarks>
+					<maml:para></maml:para>
+
+				</dev:remarks>
+			</command:example>
+		</command:examples>
+	</command:command>
+	<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+		<command:details>
+			<command:name>Get-CAMSupportContract</command:name>
+			<maml:description>
+				<maml:para>Function to retrieve Support Contract from the Cireson Asset Management</maml:para>
+
+			</maml:description>
+			<maml:copyright>
+				<maml:para></maml:para>
+			</maml:copyright>
+			<command:verb>Get</command:verb>
+			<command:noun>CAMSupportContract</command:noun>
+			<dev:version/>
+		</command:details>
+		<maml:description>
+				<maml:para>Function to retrieve Support Contract from the Cireson Asset Management</maml:para>
+
+		</maml:description>
+		<command:syntax>
+			<command:syntaxItem>
+				<maml:name>Get-CAMSupportContract</maml:name>
+				<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="Named">
+					<maml:name>DisplayName</maml:name>
+					<maml:description>
+						<maml:para>Specifies the DisplayName</maml:para>
+					</maml:description>
+					<command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+				</command:parameter>
+				<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="Named">
+					<maml:name>Id</maml:name>
+					<maml:description>
+						<maml:para>Specifies the ID of the contract. Typically the GUID.</maml:para>
+					</maml:description>
+					<command:parameterValue required="true" variableLength="false"></command:parameterValue>
+				</command:parameter>
+				<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="Named">
+					<maml:name>Filter</maml:name>
+					<maml:description>
+						<maml:para>Specifies the filter you want to apply</maml:para>
+					</maml:description>
+					<command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+				</command:parameter>
+				<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="Named">
+					<maml:name>DaysLeft</maml:name>
+					<maml:description>
+						<maml:para>Specifies the days before expiration of the contract</maml:para>
+					</maml:description>
+					<command:parameterValue required="true" variableLength="false">Int</command:parameterValue>
+				</command:parameter>
+			</command:syntaxItem>
+		</command:syntax>
+		<command:parameters>
+			<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="Named">
+				<maml:name>DisplayName</maml:name>
+				<maml:description>
+					<maml:para>Specifies the DisplayName</maml:para>
+				</maml:description>
+					<command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+				<dev:type>
+					<maml:name>System.String</maml:name>
+					<maml:uri/>
+				</dev:type>
+				<dev:defaultValue></dev:defaultValue>
+			</command:parameter>
+			<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="Named">
+				<maml:name>Id</maml:name>
+				<maml:description>
+					<maml:para>Specifies the ID of the contract. Typically the GUID.</maml:para>
+				</maml:description>
+					<command:parameterValue required="true" variableLength="false"></command:parameterValue>
+				<dev:type>
+					<maml:name></maml:name>
+					<maml:uri/>
+				</dev:type>
+				<dev:defaultValue></dev:defaultValue>
+			</command:parameter>
+			<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="Named">
+				<maml:name>Filter</maml:name>
+				<maml:description>
+					<maml:para>Specifies the filter you want to apply</maml:para>
+				</maml:description>
+					<command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+				<dev:type>
+					<maml:name>System.String</maml:name>
+					<maml:uri/>
+				</dev:type>
+				<dev:defaultValue></dev:defaultValue>
+			</command:parameter>
+			<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="Named">
+				<maml:name>DaysLeft</maml:name>
+				<maml:description>
+					<maml:para>Specifies the days before expiration of the contract</maml:para>
+				</maml:description>
+					<command:parameterValue required="true" variableLength="false">Int</command:parameterValue>
+				<dev:type>
+					<maml:name>Int</maml:name>
+					<maml:uri/>
+				</dev:type>
+				<dev:defaultValue></dev:defaultValue>
+			</command:parameter>
+		</command:parameters>
+		<maml:alertSet>
+			<maml:title></maml:title>
+			<maml:alert>
+				<maml:para>Additional information about the function.</maml:para>
+			</maml:alert>
+		</maml:alertSet>
+		<command:examples>
+			<command:example>
+				<maml:title>--------------------------  EXAMPLE 0  --------------------------</maml:title>
+				<maml:introduction>
+					<maml:para></maml:para>
+				</maml:introduction>
+				<dev:code>PS C:\&gt; Get-CAMSupportContract</dev:code>
+				<dev:remarks>
+					<maml:para>Retrieve all the contract</maml:para>
+
+				</dev:remarks>
+			</command:example>
+			<command:example>
+				<maml:title>--------------------------  EXAMPLE 1  --------------------------</maml:title>
+				<maml:introduction>
+					<maml:para></maml:para>
+				</maml:introduction>
+				<dev:code>PS C:\&gt; Get-CAMSupportContract -DisplayName &quot;Dell*&quot;</dev:code>
+				<dev:remarks>
+					<maml:para>Retrieve the contracts Display Name starting by Dell</maml:para>
+
+				</dev:remarks>
+			</command:example>
+			<command:example>
+				<maml:title>--------------------------  EXAMPLE 2  --------------------------</maml:title>
+				<maml:introduction>
+					<maml:para></maml:para>
+				</maml:introduction>
+				<dev:code>PS C:\&gt; Get-CAMSupportContract -id &#39;3cbgg558-a09c-b717-2401-05aef430b01f&#39;</dev:code>
+				<dev:remarks>
+					<maml:para>Retrieve the specific Contract with the ID &#39;3cbgg558-a09c-b717-2401-05aef430b01f&#39;</maml:para>
+
+				</dev:remarks>
+			</command:example>
+			<command:example>
+				<maml:title>--------------------------  EXAMPLE 3  --------------------------</maml:title>
+				<maml:introduction>
+					<maml:para></maml:para>
+				</maml:introduction>
+				<dev:code>PS C:\&gt; Get-CAMSupportContract -DaysLeft 30</dev:code>
+				<dev:remarks>
+					<maml:para>Retrieve contracts expiring in the next 30 days</maml:para>
+
+				</dev:remarks>
+			</command:example>
+			<command:example>
+				<maml:title>--------------------------  EXAMPLE 4  --------------------------</maml:title>
+				<maml:introduction>
+					<maml:para></maml:para>
+				</maml:introduction>
+				<dev:code>PS C:\&gt; Get-CAMSupportContract -Expired</dev:code>
+				<dev:remarks>
+					<maml:para>Retrieve all the expired contracts</maml:para>
+
+				</dev:remarks>
+			</command:example>
+		</command:examples>
+	</command:command>
+	<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+		<command:details>
+			<command:name>Get-CAMVendor</command:name>
+			<maml:description>
+				<maml:para>Function to retrieve Vendor from the Cireson Asset Management</maml:para>
+
+			</maml:description>
+			<maml:copyright>
+				<maml:para></maml:para>
+			</maml:copyright>
+			<command:verb>Get</command:verb>
+			<command:noun>CAMVendor</command:noun>
+			<dev:version/>
+		</command:details>
+		<maml:description>
+				<maml:para>Function to retrieve Vendor from the Cireson Asset Management</maml:para>
+
+		</maml:description>
+		<command:syntax>
+			<command:syntaxItem>
+				<maml:name>Get-CAMVendor</maml:name>
+				<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="Named">
+					<maml:name>DisplayName</maml:name>
+					<maml:description>
+						<maml:para>Specifies the DisplayName</maml:para>
+					</maml:description>
+					<command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+				</command:parameter>
+				<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="Named">
+					<maml:name>Id</maml:name>
+					<maml:description>
+						<maml:para>Specifies the ID. Typically the GUID.</maml:para>
+					</maml:description>
+					<command:parameterValue required="true" variableLength="false"></command:parameterValue>
+				</command:parameter>
+				<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="Named">
+					<maml:name>Filter</maml:name>
+					<maml:description>
+						<maml:para>Specifies the filter you want to apply</maml:para>
+					</maml:description>
+					<command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+				</command:parameter>
+			</command:syntaxItem>
+		</command:syntax>
+		<command:parameters>
+			<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="Named">
+				<maml:name>DisplayName</maml:name>
+				<maml:description>
+					<maml:para>Specifies the DisplayName</maml:para>
+				</maml:description>
+					<command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+				<dev:type>
+					<maml:name>System.String</maml:name>
+					<maml:uri/>
+				</dev:type>
+				<dev:defaultValue></dev:defaultValue>
+			</command:parameter>
+			<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="Named">
+				<maml:name>Id</maml:name>
+				<maml:description>
+					<maml:para>Specifies the ID. Typically the GUID.</maml:para>
+				</maml:description>
+					<command:parameterValue required="true" variableLength="false"></command:parameterValue>
+				<dev:type>
+					<maml:name></maml:name>
+					<maml:uri/>
+				</dev:type>
+				<dev:defaultValue></dev:defaultValue>
+			</command:parameter>
+			<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="Named">
+				<maml:name>Filter</maml:name>
+				<maml:description>
+					<maml:para>Specifies the filter you want to apply</maml:para>
+				</maml:description>
+					<command:parameterValue required="true" variableLength="false">System.String</command:parameterValue>
+				<dev:type>
+					<maml:name>System.String</maml:name>
+					<maml:uri/>
+				</dev:type>
+				<dev:defaultValue></dev:defaultValue>
+			</command:parameter>
+		</command:parameters>
+		<maml:alertSet>
+			<maml:title></maml:title>
+			<maml:alert>
+				<maml:para>Francois-Xavier Cat
+www.lazywinadmin.com
+@lazywinadm</maml:para>
+			</maml:alert>
+		</maml:alertSet>
+		<command:examples>
+			<command:example>
+				<maml:title>--------------------------  EXAMPLE 0  --------------------------</maml:title>
+				<maml:introduction>
+					<maml:para></maml:para>
+				</maml:introduction>
+				<dev:code>PS C:\&gt; Get-CAMVendor</dev:code>
+				<dev:remarks>
+					<maml:para>Retrieve all the Vendor</maml:para>
+
+				</dev:remarks>
+			</command:example>
+			<command:example>
+				<maml:title>--------------------------  EXAMPLE 1  --------------------------</maml:title>
+				<maml:introduction>
+					<maml:para></maml:para>
+				</maml:introduction>
+				<dev:code>PS C:\&gt; Get-CAMVendor -DisplayName &quot;Insight*&quot;</dev:code>
+				<dev:remarks>
+					<maml:para>Retrieve the Vendor Display Name starting by Insight</maml:para>
+
+				</dev:remarks>
+			</command:example>
+			<command:example>
+				<maml:title>--------------------------  EXAMPLE 2  --------------------------</maml:title>
+				<maml:introduction>
+					<maml:para></maml:para>
+				</maml:introduction>
+				<dev:code>PS C:\&gt; Get-CAMVendor -id &#39;3cbgg558-a09c-b717-2401-05aef430b01f&#39;</dev:code>
+				<dev:remarks>
+					<maml:para>Retrieve the specific Vendor with the ID &#39;3cbgg558-a09c-b717-2401-05aef430b01f&#39;</maml:para>
+
+				</dev:remarks>
+			</command:example>
+		</command:examples>
+	</command:command>
+	<command:command xmlns:maml="http://schemas.microsoft.com/maml/2004/10" xmlns:command="http://schemas.microsoft.com/maml/dev/command/2004/10" xmlns:dev="http://schemas.microsoft.com/maml/dev/2004/10">
+		<command:details>
+			<command:name>New-CAMVendor</command:name>
+			<maml:description>
+				<maml:para></maml:para>
+
+			</maml:description>
+			<maml:copyright>
+				<maml:para></maml:para>
+			</maml:copyright>
+			<command:verb>New</command:verb>
+			<command:noun>CAMVendor</command:noun>
+			<dev:version/>
+		</command:details>
+		<maml:description>
+				<maml:para></maml:para>
+
+		</maml:description>
+		<command:syntax>
+			<command:syntaxItem>
+				<maml:name>New-CAMVendor</maml:name>
+				<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="Named">
+					<maml:name>Name</maml:name>
+					<maml:description>
+						<maml:para></maml:para>
+					</maml:description>
+					<command:parameterValue required="true" variableLength="false"></command:parameterValue>
+				</command:parameter>
+			</command:syntaxItem>
+		</command:syntax>
+		<command:parameters>
+			<command:parameter required="false" variableLength="false" globbing="false" pipelineInput="false" position="Named">
+				<maml:name>Name</maml:name>
+				<maml:description>
+					<maml:para></maml:para>
+				</maml:description>
+					<command:parameterValue required="true" variableLength="false"></command:parameterValue>
+				<dev:type>
+					<maml:name></maml:name>
+					<maml:uri/>
+				</dev:type>
+				<dev:defaultValue></dev:defaultValue>
+			</command:parameter>
+		</command:parameters>
+		<command:examples>
+			<command:example>
+				<maml:title>--------------------------  EXAMPLE 1 --------------------------</maml:title>
+				<maml:introduction>
+					<maml:para></maml:para>
+				</maml:introduction>
+				<dev:code>PS C:\&gt; New-CAMVendor -Name $value1</dev:code>
+				<dev:remarks>
+					<maml:para>Write example description here.</maml:para>
+				</dev:remarks>
+			</command:example>
+		</command:examples>
+	</command:command>
+</helpItems>
+
