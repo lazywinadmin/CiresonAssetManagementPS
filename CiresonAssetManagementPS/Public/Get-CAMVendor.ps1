@@ -35,6 +35,7 @@
 		Francois-Xavier Cat
 		www.lazywinadmin.com
 		@lazywinadm
+		github.com/lazywinadmin
 #>
 	
 	[CmdletBinding(DefaultParameterSetName = 'All')]

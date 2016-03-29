@@ -7,12 +7,11 @@
 		Function to retrieve Cireson Asset Management classes
 	.EXAMPLE
 		Get-CAMClass
-	.EXAMPLE
-	
 	.NOTES
 		Francois-Xavier Cat
 		@Lazywinadm
 		www.lazywinadmin.com
+		github.com/lazywinadmin
 	#>
 	PARAM
 	(

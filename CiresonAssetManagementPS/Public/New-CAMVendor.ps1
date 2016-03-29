@@ -1,7 +1,62 @@
-﻿#get-scsmobject -class (get-scsmclass -name 'Cireson.AssetManagement.Vendor') | fl *
+﻿Function New-CAMVendor
+{
+<#
+	.SYNOPSIS
+		Function to create a new Cireson Asset Management Vendor
+	
+	.DESCRIPTION
+		Function to create a new Cireson Asset Management Vendor
+	
+	.PARAMETER Name
+		Specify the name of the Vendor(s)
+	
+	.EXAMPLE
+		PS C:\> New-CAMVendor -Name "VMware"
+	
+	.EXAMPLE
+		PS C:\> New-CAMVendor -Name "VMware", "Microsoft", "Google"
+	
+	.EXAMPLE
+		Get-Content Vendors.txt | New-CAMVendor
+	
+	.NOTES
+		Francois-Xavier Cat
+		lazywinadmin.com
+		@lazywinadm
+		github.com/lazywinadmin
+#>
+	[CmdletBinding()]
+	PARAM (
+		[Parameter(ValueFromPipeline)]
+		[String[]]$Name
+	)
+	
+	FOREACH ($Item in $Name)
+	{
+		TRY
+		{
+			# Define the Properties
+			$properties = @{
+				Name = $Item
+			}
+			# Create the Item
+			New-SCSMObject -Class (get-scsmclass -name 'Cireson.AssetManagement.Vendor') -PropertyHashtable $properties
+		}
+		CATCH
+		{
+			
+			Write-Error -Message "[PROCESS] An Error occured"
+			$Error[0].Exception.Message
+		}
+	}
+}
+
+#get-scsmobject -class (get-scsmclass -name 'Cireson.AssetManagement.Vendor') | fl *
 #(get-scsmobject -class (get-scsmclass -name 'Cireson.AssetManagement.Vendor')).values
 
 <#
+EXAMPLE OF OUTUT
+
 Name                                         : VMWare
 VendorAddress1                               : Parnel House, Barrack Square
 VendorAddress2                               : Main St
@@ -38,14 +93,3 @@ ViewName                                     : ManagedEntityGenericView
 ObjectMode                                   : All
 
 #>
-
-Function New-CAMVendor
-{
-	[CmdletBinding()]
-	PARAM($Name)
-	
-	$properties = @{
-		Name = $Name
-	}
-	New-SCSMObject -Class (get-scsmclass -name 'Cireson.AssetManagement.Vendor') -PropertyHashtable $properties
-}
