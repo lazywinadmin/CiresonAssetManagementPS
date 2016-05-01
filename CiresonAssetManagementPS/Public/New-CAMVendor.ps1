@@ -18,6 +18,15 @@
 	
 	.EXAMPLE
 		Get-Content Vendors.txt | New-CAMVendor
+		
+	.EXAMPLE
+		$props = @{
+			Name = "Google"
+			Website = "www.Google.com"
+			VendorAddress1 = "San Francisco"
+		}		
+		
+		New-CAMVendor -hashtable $props
 	
 	.NOTES
 		Francois-Xavier Cat
@@ -25,20 +34,32 @@
 		@lazywinadm
 		github.com/lazywinadmin
 #>
-	[CmdletBinding()]
+	[CmdletBinding(DefaultParameterSetName='Name')]
 	PARAM (
-		[Parameter(ValueFromPipeline)]
-		[String[]]$Name
+		[Parameter(Mandatory,ValueFromPipeline,ParameterSetName='Name')]
+		[String[]]$Name,
+		[Parameter(Mandatory,ParameterSetName='Name')]
+		[Hashtable]$HashTable
 	)
 	
 	FOREACH ($Item in $Name)
 	{
 		TRY
 		{
-			# Define the Properties
-			$properties = @{
-				Name = $Item
+			IF ($PSBoundParameters['Name'])
+			{
+			
+				# Define the Properties
+				$properties = @{
+					Name = $Item
+				}
 			}
+			
+			IF ($PSBoundParameters['Hashtable'])
+			{
+				$properties = $HashTable
+			}
+			
 			# Create the Item
 			New-SCSMObject -Class (get-scsmclass -name 'Cireson.AssetManagement.Vendor') -PropertyHashtable $properties
 		}
