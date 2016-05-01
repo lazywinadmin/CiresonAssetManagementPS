@@ -57,6 +57,12 @@ New-CAMVendor -hashtable $props
 
 
 ## Cmdlets
+
+``` powershell
+# Retrieving all the Cmdlets available
+Get-Command -module CiresonAssetManagementPS
+```
+
 * Get-CAMBase
 * Get-CAMCatalogItem
 * Get-CAMClass
@@ -76,7 +82,9 @@ New-CAMVendor -hashtable $props
 * Get-CAMPurchase
 * Get-CAMPurchaseOrder
 * Get-CAMRelatedCustodian
+* Get-CAMRelatedObject
 * Get-CAMRelatedVendor
+* Get-CAMRelationshipObject
 * Get-CAMSettings
 * Get-CAMSoftwareAsset
 * Get-CAMStandard
