@@ -43,9 +43,17 @@
 		Get-CAMSupportContract -Expired
 		
 		Retrieve all the expired contracts
+		
+	.EXAMPLE
+		Get-CAMSupportContract -Filter "Name -eq 'Google'"
+		
+		Retrieve Support contract with the name Google
 	
 	.NOTES
-		Additional information about the function.
+		Francois-Xavier Cat
+		www.lazywinadmin.com
+		@lazywinadm
+		github.com/lazywinadmin
 #>
 	
 	[CmdletBinding(DefaultParameterSetName = 'All')]
@@ -85,34 +93,28 @@
 			
 			IF ($PSBoundParameters['DisplayName'])
 			{
-				Get-Scsmobject @Splatting -Filter "DisplayName -like $DisplayName"
+				$Splatting.Filter = "DisplayName -like $DisplayName"
 			}
 			ELSEIF ($PSBoundParameters['ID'])
 			{
-				Get-Scsmobject @Splatting -Filter "Id -eq $ID"
+				$Splatting.Filter = "Id -eq $ID"
 			}
 			ELSEIF ($PSBoundParameters['Filter'])
 			{
-				get-scsmobject @Splatting -Filter $Filter
+				$Splatting.Filter =  $Filter
 			}
 			ELSEIF ($PSBoundParameters['DaysLeft'])
 			{
-				get-scsmobject @Splatting -Filter "ContractEndDate -lt $((Get-Date).AddDays($DaysLeft))" #-and ContractEndDate -ge $(Get-Date)"
+				$Splatting.Filter =  "ContractEndDate -lt $((Get-Date).AddDays($DaysLeft))" #-and ContractEndDate -ge $(Get-Date)"
 			}
-			ELSE
-			{
-				get-scsmobject @Splatting
-			}
-			<#IF ($PSBoundParameters['Status'])
-			{
-				Write-Verbose -Message "[PROCESS] Parameter: Status"
-				get-scsmobject @Splatting -Filter "ContractStatus -eq $Status"
-			}#>
+			
+			Get-SCSMObject @Splatting
+			
 		}
 		CATCH
 		{
 			Write-Error -Message "[PROCESS] An Error occured"
-			$Error[0].Exception.Message
+			$Error[0]
 		}
 	}
 }
