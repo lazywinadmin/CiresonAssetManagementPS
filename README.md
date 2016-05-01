@@ -43,6 +43,12 @@ Get-CAMSupportContract -DisplayName "HP Workstation 2016"
 $HPContract = Get-CAMSupportContract -DisplayName "HP Workstation 2016"
 Get-CAMRelatedCustodian -WorkItemObject $HPContract
 
+# New Support Contract
+$props = @{
+    Name = "HP Servers 2016"
+}
+New-CAMObject -HashTable $props -TypeName SupportContract
+
 # Create a new Vendor
 $props = @{
     Name = "LazyWinAdmin"
@@ -50,10 +56,7 @@ $props = @{
     VendorAddress1 = "Montreal"
 }	
 New-CAMVendor -hashtable $props
-
 ```
-
-
 
 
 ## Cmdlets
