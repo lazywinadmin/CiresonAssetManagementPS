@@ -1,4 +1,4 @@
-Function New-CAMObject
+Function Get-CAMObject
 {
 <#
 	.SYNOPSIS
