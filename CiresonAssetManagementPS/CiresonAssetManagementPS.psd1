@@ -66,7 +66,7 @@ PowerShellVersion = '3.0'
 # NestedModules = @()
 
 # Functions to export from this module
-FunctionsToExport = 'Get-CAMBase', 'Get-CAMCatalogItem', 'Get-CAMClass', 'Get-CAMConsumable', 'Get-CAMCostCenter', 'Get-CAMHardwareAsset', 'Get-CAMImportConnector', 'Get-CAMInvoice', 'Get-CAMLease', 'Get-CAMLicense', 'Get-CAMLocation', 'Get-CAMLog', 'Get-CAMMeteringData', 'Get-CAMNoticeEvent', 'Get-CAMNoticeEventData', 'Get-CAMOrganization', 'Get-CAMPurchase', 'Get-CAMPurchaseOrder', 'Get-CAMRelatedCustodian', 'Get-CAMRelatedObject', 'Get-CAMRelatedVendor', 'Get-CAMRelationshipObject', 'Get-CAMSettings', 'Get-CAMSoftwareAsset', 'Get-CAMStandard', 'Get-CAMSubnet', 'Get-CAMSupportContract', 'Get-CAMVendor', 'Get-CAMWarranty', 'New-CAMObject', 'New-CAMVendor'
+FunctionsToExport = 'Get-CAMBase', 'Get-CAMCatalogItem', 'Get-CAMClass', 'Get-CAMConsumable', 'Get-CAMCostCenter', 'Get-CAMHardwareAsset', 'Get-CAMImportConnector', 'Get-CAMInvoice', 'Get-CAMLease', 'Get-CAMLicense', 'Get-CAMLocation', 'Get-CAMLog', 'Get-CAMMeteringData', 'Get-CAMNoticeEvent', 'Get-CAMNoticeEventData', 'Get-CAMOrganization', 'Get-CAMPurchase', 'Get-CAMPurchaseOrder', 'Get-CAMRelatedCustodian', 'Get-CAMRelatedObject', 'Get-CAMRelatedVendor', 'Get-CAMRelationshipObject', 'Get-CAMSetting', 'Get-CAMSoftwareAsset', 'Get-CAMStandard', 'Get-CAMSubnet', 'Get-CAMSupportContract', 'Get-CAMVendor', 'Get-CAMWarranty', 'New-CAMObject', 'New-CAMVendor'
 
 # Cmdlets to export from this module
 # CmdletsToExport = '*'
