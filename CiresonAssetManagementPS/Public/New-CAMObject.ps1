@@ -28,7 +28,7 @@ Function New-CAMObject
 		@lazywinadm
 		github.com/lazywinadmin
 #>
-	[CmdletBinding()]
+	[CmdletBinding(SupportsShouldProcess=$true)]
 	PARAM (
 		[Parameter(Mandatory)]
         [ValidateSet(
@@ -66,12 +66,15 @@ Function New-CAMObject
 	)
     TRY
     {
-        Write-Verbose -Message $(New-ScriptMessage -Block PROCESS -message "TypeName Cireson.AssetManagement.$TypeName")
-        
-        # Create the Item
-        New-SCSMObject -Class (get-scsmclass -name "Cireson.AssetManagement.$TypeName") -PropertyHashtable $HashTable
-        
-        Write-Verbose -Message $(New-ScriptMessage -Block PROCESS -message "Object Created")
+        if ($PSCmdlet.ShouldProcess($HashTable,"Create an object of Type ($TypeName)"))
+        {
+            Write-Verbose -Message $(New-ScriptMessage -Block PROCESS -message "TypeName Cireson.AssetManagement.$TypeName")
+            
+            # Create the Item
+            New-SCSMObject -Class (get-scsmclass -name "Cireson.AssetManagement.$TypeName") -PropertyHashtable $HashTable
+            
+            Write-Verbose -Message $(New-ScriptMessage -Block PROCESS -message "Object Created")
+        }
     }
     CATCH
     {

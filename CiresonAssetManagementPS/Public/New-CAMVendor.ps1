@@ -34,7 +34,7 @@
 		@lazywinadm
 		github.com/lazywinadmin
 #>
-	[CmdletBinding(DefaultParameterSetName='Name')]
+	[CmdletBinding(SupportsShouldProcess=$true,DefaultParameterSetName='Name')]
 	PARAM (
 		[Parameter(Mandatory,ValueFromPipeline,ParameterSetName='Name')]
 		[String[]]$Name,
@@ -60,8 +60,11 @@
 				$properties = $HashTable
 			}
 			
-			# Create the Item
-			New-SCSMObject -Class (get-scsmclass -name 'Cireson.AssetManagement.Vendor') -PropertyHashtable $properties
+			if ($PSCmdlet.ShouldProcess($properties,"Create an object of Type (Cireson.AssetManagement.Vendor)"))
+        	{
+				# Create the Item
+				New-SCSMObject -Class (get-scsmclass -name 'Cireson.AssetManagement.Vendor') -PropertyHashtable $properties
+			}
 		}
 		CATCH
 		{
