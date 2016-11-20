@@ -51,7 +51,7 @@
 		github.com/lazywinadmin
 #>
 	
-	[CmdletBinding()]
+	[CmdletBinding(SupportsShouldProcess=$true)]
 	[OutputType([string])]
 	param
 	(
@@ -63,21 +63,24 @@
 	
 	PROCESS
 	{
-		$DateFormat = Get-Date -Format $DateFormat
-		$MyCommand = (Get-Variable -Scope $FunctionScope -Name MyInvocation -ValueOnly).MyCommand.Name
-		IF ($MyCommand)
+		if($PSCmdlet.ShouldProcess($Message,"show default message used in VERBOSE/DEBUG/WARNING"))
 		{
-			$String = "[$DateFormat][$MyCommand]"
-		} #IF
-		ELSE
-		{
-			$String = "[$DateFormat]"
-		} #Else
-		
-		IF ($PSBoundParameters['Block'])
-		{
-			$String += "[$Block]"
+			$DateFormat = Get-Date -Format $DateFormat
+			$MyCommand = (Get-Variable -Scope $FunctionScope -Name MyInvocation -ValueOnly).MyCommand.Name
+			IF ($MyCommand)
+			{
+				$String = "[$DateFormat][$MyCommand]"
+			} #IF
+			ELSE
+			{
+				$String = "[$DateFormat]"
+			} #Else
+			
+			IF ($PSBoundParameters['Block'])
+			{
+				$String += "[$Block]"
+			}
+			Write-Output "$String $Message"
 		}
-		Write-Output "$String $Message"
 	} #Process
 }
