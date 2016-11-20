@@ -1,4 +1,4 @@
-function Get-CAMSettings
+function Get-CAMSetting
 {
 	<#
 	.SYNOPSIS
@@ -8,9 +8,9 @@ function Get-CAMSettings
 	.EXAMPLE
 		Get-CAMSettings
 	.EXAMPLE
-		Get-CAMSettings -DisplayName "*Pro" 
+		Get-CAMSetting -DisplayName "*Pro" 
 	.EXAMPLE
-		Get-CAMSettings -id '3cbgg558-a09c-b717-2401-05aef430b01f'
+		Get-CAMSetting -id '3cbgg558-a09c-b717-2401-05aef430b01f'
 	.NOTES
 		Francois-Xavier Cat
 		@Lazywinadm
