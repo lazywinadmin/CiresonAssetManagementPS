@@ -12,7 +12,9 @@ This module is relying on the SMlets PowerShell module which allows you to manag
 
 ## Installation
 #### Download from PowerShell Gallery
-Coming soon...
+``` powershell
+Install-Module CiresonAssetManagementPS
+```
 #### Download from GitHub repository
 
 * Download the repository
