@@ -1,23 +1,23 @@
 ﻿Function Get-CAMRelatedCustodian
 {
 <#
-	.SYNOPSIS
-		Function to retrieve the Related Custodian of an object
-	
-	.DESCRIPTION
-		Function to retrieve the Related Custodian of an object
-	
-	.PARAMETER WorkItemObject
-		Specifies the Object to process
-	
-	.EXAMPLE
-		PS C:\> Get-CAMRelatedCustodian -WorkItemObject $SupportContract
-	
-	.NOTES
-		Francois-Xavier Cat
-		www.lazywinadmin.com
-		@lazywinadm
-		github.com/lazywinadmin
+.SYNOPSIS
+	Function to retrieve the Related Custodian of an object
+
+.DESCRIPTION
+	Function to retrieve the Related Custodian of an object
+
+.PARAMETER WorkItemObject
+	Specifies the Object to process
+
+.EXAMPLE
+	PS C:\> Get-CAMRelatedCustodian -WorkItemObject $SupportContract
+
+.NOTES
+	Francois-Xavier Cat
+	www.lazywinadmin.com
+	@lazywinadm
+	github.com/lazywinadmin
 #>
 	[CmdletBinding()]
 	param (

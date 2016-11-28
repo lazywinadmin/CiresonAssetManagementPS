@@ -1,24 +1,31 @@
 ﻿function Get-CAMOrganization
 {
-	<#
-	.SYNOPSIS
-		Function to retrieve Organization from the Cireson Asset Management
-	.DESCRIPTION
-		Function to retrieve Organization from the Cireson Asset Management
-	.EXAMPLE
-		Get-CamOrganization
-	.EXAMPLE
-		Get-CamOrganization -Displayname 'IT'
-	.EXAMPLE
-		Get-CamOrganization -ID '80e80889-86d1-4cee-b1e9-fcd265fa54a2'
-	.EXAMPLE
-		Get-CamOrganization -Filter "ID -eq 80e80889-86d1-4cee-b1e9-fcd265fa54a2"
-	.NOTES
-		Francois-Xavier Cat
-		@Lazywinadm
-		www.lazywinadmin.com
-		github.com/lazywinadmin
-	#>
+<#
+.SYNOPSIS
+	Function to retrieve Organization from the Cireson Asset Management
+.DESCRIPTION
+	Function to retrieve Organization from the Cireson Asset Management
+.PARAMETER DisplayName
+	Specifies the Displayname
+.PARAMETER Id
+	Specifies the ID
+.PARAMETER Filter
+	Specifies the Filter of your query.
+	Example: "DisplayName -like 'LazyWinAdmin'"
+.EXAMPLE
+	Get-CamOrganization
+.EXAMPLE
+	Get-CamOrganization -Displayname 'IT'
+.EXAMPLE
+	Get-CamOrganization -ID '80e80889-86d1-4cee-b1e9-fcd265fa54a2'
+.EXAMPLE
+	Get-CamOrganization -Filter "ID -eq 80e80889-86d1-4cee-b1e9-fcd265fa54a2"
+.NOTES
+	Francois-Xavier Cat
+	www.lazywinadmin.com
+	@Lazywinadm
+	github.com/lazywinadmin
+#>
 	[CmdletBinding(DefaultParameterSetName = 'All')]
 	PARAM (
 		[Parameter(ParameterSetName = 'DisplayName')]

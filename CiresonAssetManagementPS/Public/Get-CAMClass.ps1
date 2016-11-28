@@ -9,8 +9,8 @@
 		Get-CAMClass
 	.NOTES
 		Francois-Xavier Cat
-		@Lazywinadm
 		www.lazywinadmin.com
+		@Lazywinadm
 		github.com/lazywinadmin
 	#>
 	PARAM

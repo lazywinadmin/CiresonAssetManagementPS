@@ -1,29 +1,29 @@
 Function Get-CAMObject
 {
 <#
-	.SYNOPSIS
-		Function to retrieving Cireson Asset Management Object(s)
-	
-	.DESCRIPTION
-		Function to retrieving Cireson Asset Management Object(s)
-	
-    .PARAMETER TypeName
-        Specifies the type of Object you want to create
-        
-    .PARAMETER Filter  
-        Specifies the Filter to apply on the query
-    
-	.EXAMPLE
-        Get-CAMObject -TypeName Vendor
+.SYNOPSIS
+    Function to retrieving Cireson Asset Management Object(s)
 
-    .EXAMPLE
-        Get-CAMObject -TypeName Vendor -filter "Name -eq 'Google'"   
-	
-	.NOTES
-		Francois-Xavier Cat
-		lazywinadmin.com
-		@lazywinadm
-		github.com/lazywinadmin
+.DESCRIPTION
+    Function to retrieving Cireson Asset Management Object(s)
+
+.PARAMETER TypeName
+    Specifies the type of Object you want to create
+    
+.PARAMETER Filter  
+    Specifies the Filter to apply on the query
+
+.EXAMPLE
+    Get-CAMObject -TypeName Vendor
+
+.EXAMPLE
+    Get-CAMObject -TypeName Vendor -filter "Name -eq 'Google'"   
+
+.NOTES
+    Francois-Xavier Cat
+    lazywinadmin.com
+    @lazywinadm
+    github.com/lazywinadmin
 #>
 	[CmdletBinding()]
 	PARAM (

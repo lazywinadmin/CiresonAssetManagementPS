@@ -1,41 +1,41 @@
 ﻿function Get-CAMVendor
 {
 <#
-	.SYNOPSIS
-		Function to retrieve Vendor from the Cireson Asset Management
+.SYNOPSIS
+	Function to retrieve Vendor from the Cireson Asset Management
+
+.DESCRIPTION
+	Function to retrieve Vendor from the Cireson Asset Management
+
+.PARAMETER DisplayName
+	Specifies the DisplayName
+
+.PARAMETER ID
+	Specifies the ID. Typically the GUID.
+
+.PARAMETER Filter
+	Specifies the filter you want to apply
+
+.EXAMPLE
+	Get-CAMVendor
 	
-	.DESCRIPTION
-		Function to retrieve Vendor from the Cireson Asset Management
+	Retrieve all the Vendor
+
+.EXAMPLE
+	Get-CAMVendor -DisplayName "Insight*"
 	
-	.PARAMETER DisplayName
-		Specifies the DisplayName
+	Retrieve the Vendor Display Name starting by Insight
+
+.EXAMPLE
+	Get-CAMVendor -id '3cbgg558-a09c-b717-2401-05aef430b01f'
 	
-	.PARAMETER ID
-		Specifies the ID. Typically the GUID.
-	
-	.PARAMETER Filter
-		Specifies the filter you want to apply
-	
-	.EXAMPLE
-		Get-CAMVendor
-		
-		Retrieve all the Vendor
-	
-	.EXAMPLE
-		Get-CAMVendor -DisplayName "Insight*"
-		
-		Retrieve the Vendor Display Name starting by Insight
-	
-	.EXAMPLE
-		Get-CAMVendor -id '3cbgg558-a09c-b717-2401-05aef430b01f'
-		
-		Retrieve the specific Vendor with the ID '3cbgg558-a09c-b717-2401-05aef430b01f'
-	
-	.NOTES
-		Francois-Xavier Cat
-		www.lazywinadmin.com
-		@lazywinadm
-		github.com/lazywinadmin
+	Retrieve the specific Vendor with the ID '3cbgg558-a09c-b717-2401-05aef430b01f'
+
+.NOTES
+	Francois-Xavier Cat
+	www.lazywinadmin.com
+	@lazywinadm
+	github.com/lazywinadmin
 #>
 	
 	[CmdletBinding(DefaultParameterSetName = 'All')]

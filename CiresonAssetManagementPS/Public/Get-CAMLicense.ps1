@@ -1,45 +1,46 @@
 ﻿function Get-CAMLicense
 {
 <#
-	.SYNOPSIS
-		Function to retrieve License from the Cireson Asset Management
-	
-	.DESCRIPTION
-		Function to retrieve License from the Cireson Asset Management
-	
-	.PARAMETER DisplayName
-		Specifies the DisplayName
-	
-	.PARAMETER ID
-		Specifies the ID of the License. Typically the GUID.
-	
-	.PARAMETER Filter
-		Specifies the filter you want to apply
+.SYNOPSIS
+	Function to retrieve License from the Cireson Asset Management
 
-	.EXAMPLE
-		Get-CAMLicense
-		
-		Retrieve all the Licenses
-	
-	.EXAMPLE
-		Get-CAMLicense -DisplayName "Antidote*"
-		
-		Retrieve the Licenses with the displayname Antidote
-	
-	.EXAMPLE
-		Get-CAMLicense -id '3cbgg558-a09c-b717-2401-05aef430b01f'
-		
-		Retrieve the specific License with the ID '3cbgg558-a09c-b717-2401-05aef430b01f'
+.DESCRIPTION
+	Function to retrieve License from the Cireson Asset Management
 
-	.EXAMPLE
-		Get-CAMLicense -filter "SeatsRemaining -gt 1"
-		
-		Retrieve Licenses with more thant 1 seat available
+.PARAMETER DisplayName
+	Specifies the DisplayName
+
+.PARAMETER ID
+	Specifies the ID of the License. Typically the GUID.
+
+.PARAMETER Filter
+	Specifies the filter you want to apply
+
+.EXAMPLE
+	Get-CAMLicense
 	
-	.NOTES
-		Francois-Xavier Cat
-        www.lazywinadmin.com
-        @lazywinadm
+	Retrieve all the Licenses
+
+.EXAMPLE
+	Get-CAMLicense -DisplayName "Antidote*"
+	
+	Retrieve the Licenses with the displayname Antidote
+
+.EXAMPLE
+	Get-CAMLicense -id '3cbgg558-a09c-b717-2401-05aef430b01f'
+	
+	Retrieve the specific License with the ID '3cbgg558-a09c-b717-2401-05aef430b01f'
+
+.EXAMPLE
+	Get-CAMLicense -filter "SeatsRemaining -gt 1"
+	
+	Retrieve Licenses with more thant 1 seat available
+
+.NOTES
+	Francois-Xavier Cat
+	www.lazywinadmin.com
+	@lazywinadm
+	github.com/lazywinadmin
 #>
 	
 	[CmdletBinding(DefaultParameterSetName = 'All')]

@@ -1,32 +1,32 @@
 Function New-CAMObject
 {
 <#
-	.SYNOPSIS
-		Function to create a new Cireson Asset Management Object
-	
-	.DESCRIPTION
-		Function to create a new Cireson Asset Management Object
-	
-    .PARAMETER TypeName
-        Specifies the type of Object you want to create
+.SYNOPSIS
+    Function to create a new Cireson Asset Management Object
+
+.DESCRIPTION
+    Function to create a new Cireson Asset Management Object
+
+.PARAMETER TypeName
+    Specifies the type of Object you want to create
+
+.PARAMETER Hashtable    
+    Specifies the properties of the new object
     
-	.PARAMETER Hashtable    
-        Specifies the properties of the new object
-		
-	.EXAMPLE
-		$props = @{
-			Name = "Google"
-			Website = "www.Google.com"
-			VendorAddress1 = "San Francisco"
-		}		
-		
-		New-CAMObject -TypeName Vendor -hashtable $props
-	
-	.NOTES
-		Francois-Xavier Cat
-		lazywinadmin.com
-		@lazywinadm
-		github.com/lazywinadmin
+.EXAMPLE
+    $props = @{
+        Name = "Google"
+        Website = "www.Google.com"
+        VendorAddress1 = "San Francisco"
+    }		
+    
+    New-CAMObject -TypeName Vendor -hashtable $props
+
+.NOTES
+    Francois-Xavier Cat
+    lazywinadmin.com
+    @lazywinadm
+    github.com/lazywinadmin
 #>
 	[CmdletBinding(SupportsShouldProcess=$true)]
 	PARAM (

@@ -1,38 +1,41 @@
 ﻿Function New-CAMVendor
 {
 <#
-	.SYNOPSIS
-		Function to create a new Cireson Asset Management Vendor
+.SYNOPSIS
+	Function to create a new Cireson Asset Management Vendor
+
+.DESCRIPTION
+	Function to create a new Cireson Asset Management Vendor
+
+.PARAMETER Name
+	Specify the name of the Vendor(s)
 	
-	.DESCRIPTION
-		Function to create a new Cireson Asset Management Vendor
+.PARAMETER Hashtable
+	Specifies multiple properties of the new vendor.
+
+.EXAMPLE
+	PS C:\> New-CAMVendor -Name "VMware"
+
+.EXAMPLE
+	PS C:\> New-CAMVendor -Name "VMware", "Microsoft", "Google"
+
+.EXAMPLE
+	Get-Content Vendors.txt | New-CAMVendor
 	
-	.PARAMETER Name
-		Specify the name of the Vendor(s)
+.EXAMPLE
+	$props = @{
+		Name = "Google"
+		Website = "www.Google.com"
+		VendorAddress1 = "San Francisco"
+	}		
 	
-	.EXAMPLE
-		PS C:\> New-CAMVendor -Name "VMware"
-	
-	.EXAMPLE
-		PS C:\> New-CAMVendor -Name "VMware", "Microsoft", "Google"
-	
-	.EXAMPLE
-		Get-Content Vendors.txt | New-CAMVendor
-		
-	.EXAMPLE
-		$props = @{
-			Name = "Google"
-			Website = "www.Google.com"
-			VendorAddress1 = "San Francisco"
-		}		
-		
-		New-CAMVendor -hashtable $props
-	
-	.NOTES
-		Francois-Xavier Cat
-		lazywinadmin.com
-		@lazywinadm
-		github.com/lazywinadmin
+	New-CAMVendor -hashtable $props
+
+.NOTES
+	Francois-Xavier Cat
+	lazywinadmin.com
+	@lazywinadm
+	github.com/lazywinadmin
 #>
 	[CmdletBinding(SupportsShouldProcess=$true,DefaultParameterSetName='Name')]
 	PARAM (

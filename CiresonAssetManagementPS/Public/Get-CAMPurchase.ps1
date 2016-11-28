@@ -1,22 +1,26 @@
 function Get-CAMPurchase
 {
-	<#
-	.SYNOPSIS
-		Function to retrieve Purchase from the Cireson Asset Management
-	.DESCRIPTION
-		Function to retrieve Purchase from the Cireson Asset Management
-	.EXAMPLE
-		Get-CAMPurchase
-	.EXAMPLE
-		Get-CAMPurchase -DisplayName "*Pro" 
-	.EXAMPLE
-		Get-CAMPurchase -id '3cbgg558-a09c-b717-2401-05aef430b01f'
-	.NOTES
-		Francois-Xavier Cat
-		@Lazywinadm
-		www.lazywinadmin.com
-		github.com/lazywinadmin
-	#>
+<#
+.SYNOPSIS
+	Function to retrieve Purchase from the Cireson Asset Management
+.DESCRIPTION
+	Function to retrieve Purchase from the Cireson Asset Management
+.PARAMETER DisplayName
+	Specifies the Displayname
+.PARAMETER Id
+	Specifies the ID
+.EXAMPLE
+	Get-CAMPurchase
+.EXAMPLE
+	Get-CAMPurchase -DisplayName "*Pro" 
+.EXAMPLE
+	Get-CAMPurchase -id '3cbgg558-a09c-b717-2401-05aef430b01f'
+.NOTES
+	Francois-Xavier Cat
+	www.lazywinadmin.com
+	@Lazywinadm
+	github.com/lazywinadmin
+#>
 	[CmdletBinding(DefaultParameterSetName = 'DisplayName')]
 	PARAM (
 		[Parameter(ParameterSetName = 'DisplayName')]
